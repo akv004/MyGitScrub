@@ -1,0 +1,32 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+env/
+ENV/
+venv/
+
+# PyCharm project files
+.idea/
+
+# macOS system files
+.DS_Store
+
+# py2app build artifacts
+build/
+dist/
+*.app
+
+# Log/output files
+*.log
+
+# Temporary files
+*.bak
+*.swp
+
+# Pattern/example files (optional)
+resources/patterns.txt

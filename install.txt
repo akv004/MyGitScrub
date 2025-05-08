@@ -1,0 +1,37 @@
+pip install PySide6
+
+# for distribution
+cd MyGitScrub
+python setup.py py2app
+
+
+3: Build the App
+
+python setup.py py2app
+Your .app will be in:
+
+dist/GitScrub.app
+
+You can now:
+
+Double-click to run
+Zip it and share with other macOS users
+
+
+
+Option 1: Create .icns from PNG (Recommended)
+Use a square PNG image (e.g., gitscrub.png) — 512x512 or 1024x1024 is best
+
+mkdir icon.iconset
+sips -z 16 16     gitscrub.png --out icon.iconset/icon_16x16.png
+sips -z 32 32     gitscrub.png --out icon.iconset/icon_16x16@2x.png
+sips -z 32 32     gitscrub.png --out icon.iconset/icon_32x32.png
+sips -z 64 64     gitscrub.png --out icon.iconset/icon_32x32@2x.png
+sips -z 128 128   gitscrub.png --out icon.iconset/icon_128x128.png
+sips -z 256 256   gitscrub.png --out icon.iconset/icon_128x128@2x.png
+sips -z 256 256   gitscrub.png --out icon.iconset/icon_256x256.png
+sips -z 512 512   gitscrub.png --out icon.iconset/icon_256x256@2x.png
+sips -z 512 512   gitscrub.png --out icon.iconset/icon_512x512.png
+cp gitscrub.png icon.iconset/icon_512x512@2x.png
+iconutil -c icns icon.iconset
+
