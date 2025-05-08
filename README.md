@@ -37,9 +37,8 @@ Built with [PySide6](https://doc.qt.io/qtforpython/) and powered by [git-filter-
    ```
 4. Pattern File Format (patterns.txt)
    ```txt
-   # Literal match (entire string will be replaced with ***)
-literal:$http.defaults.headers.common.Authorization = 'Basic Ymasdfasd';
-
-# Regex match (supports replacement)
-regex:api\s*=\s*['\"]?[a-zA-Z0-9]+['\"]? ==>> api = "REDACTED"
-```
+      # Literal match (entire string will be replaced with ***)
+      literal:$http.defaults.headers.common.Authorization = 'Basic Ymasdfasd';
+      # Regex match (supports replacement)
+      regex:api\s*=\s*['\"]?[a-zA-Z0-9]+['\"]? ==>> api = "REDACTED"
+   ```
